@@ -1,8 +1,8 @@
 class App
-  attr_accessor :clipboard
+  attr_accessor :scenario_context
 
   def initialize
-    @clipboard = {}
+    @scenario_context = {}
   end
 
   def home_app

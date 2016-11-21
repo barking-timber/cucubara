@@ -33,9 +33,9 @@ Maybe in the future it'll be transform it to Gem.
 - basic apps ready: home and admin app with predefined step definitions
 - very basic internationalization handling
 - multi browser support (not tested on OSX and Windows yet)
-- clipboard to set sth for eg. ```When``` step and check it in ```Then``` step
--- to add sth to clipboard ```@app.clipboard[:key] = value```
--- to get sth from clipboard ```@app.clipboard[:key]```
+- scenario_context to save scenario state for eg. created user credentials from ```When``` steps
+-- to add sth to scenario_context ```@app.scenario_context[:key] = value```
+-- to get sth from scenario_context ```@app.scenario_context[:key]```
 - tags scheme: @positive, @negative, @skip etc. tags
 
 ## Tags convention suggestion
