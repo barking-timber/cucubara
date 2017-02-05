@@ -4,6 +4,11 @@ Feel free to clone, change it on your own.
 
 Maybe in the future it'll be transform it to Gem.
 
+## Firefox
+- download latest https://github.com/mozilla/geckodriver/releases 
+- then add it to the PATH - follow the instructions: https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver
+- example ```export PATH=$PATH:/Users/jbi07/geckodriver```
+
 ## Installation
 - ```bundle install```
 
@@ -11,7 +16,7 @@ Maybe in the future it'll be transform it to Gem.
 - ```bundle exec cucumber features```
 - ```bundle exec cucumber features/test.feature:4```
 - ```bundle exec cucumber features --tags @negative```
-- ```bundle exec cucumber features BROWSER=capybara-webkit```
+- ```bundle exec cucumber features BROWSER=firefox```
 
 ## Optional Dependencies
 - If you run headless in phantomjs run ```sudo apt-get install phantomjs```

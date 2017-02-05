@@ -1,3 +1,4 @@
 results/*.html
 results/*.png
 .bundle
+.DS_Store

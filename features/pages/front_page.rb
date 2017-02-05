@@ -1,5 +1,4 @@
 class FrontPage < SitePrism::Page
-  set_url 'http://www.google.pl'
   element :logo, '#hplogo'
-  element :search_input, 'input'
+  element :search_input, '#lst-ib'
 end

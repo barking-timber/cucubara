@@ -11,7 +11,7 @@ Feature: Visit Google
   Scenario Outline: Check translations working
     When I am using "<lang>" language version
     And I go to "<domain>" url
-    Then I should see "tools" text
+    Then I should see "Google" text
 
     Examples:
     | lang | domain                |

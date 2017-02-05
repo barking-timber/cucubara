@@ -15,13 +15,11 @@ when 'phantomjs'
   end
   Capybara.default_driver = :poltergeist
 else
-  Capybara.default_driver = :selenium
-  Capybara.register_driver :selenium do |app|
-    browser = (ENV['BROWSER'] || CONFIG['capybara']['browser']).to_sym
-    Capybara::Selenium::Driver.new(app, browser: browser)
-  end
-  # todo's
-  # https://cucumber.io/docs/reference/browser-automation#re-using-the-browser-window
+    Capybara.default_driver = :selenium
+    Capybara.register_driver :selenium do |app|
+      browser = (ENV['BROWSER'] || CONFIG['capybara']['browser']).to_sym
+      Capybara::Selenium::Driver.new(app, browser: browser)
+    end
 end
 
 puts 'Running tests with '"#{Capybara.current_driver}"' driver'
